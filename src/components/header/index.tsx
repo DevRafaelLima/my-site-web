@@ -1,12 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem, Box, ListItemButton, ListItemIcon, ListItemText, List, Collapse } from '@mui/material';
-import { ShoppingCart, AssignmentTurnedIn, Dashboard, Instagram, Facebook, Person, ExitToApp, LinkedIn, Work, Code, School, Create, GitHub, Home } from '@mui/icons-material';
-import Link from 'next/link';
+import React, { useState } from 'react';
+import { AppBar, Toolbar,  Menu, MenuItem, Box, ListItemButton, ListItemIcon, ListItemText, List } from '@mui/material';
+import {
+    Instagram,
+    Person,
+    LinkedIn,
+    Work,
+    Code,
+    School,
+    Create,
+    GitHub,
+    Home
+} from '@mui/icons-material';
 import ItemMenu from '../itemMenuHeader';
 import { TItensMenu } from '@/types/TItensMenu';
-import { deflate } from 'zlib';
-import { useMenuContext } from '@/contexts/MenuSelectContext';
-import { useRouter } from 'next/router';
 
 
 
@@ -15,56 +21,6 @@ const Header = () => {
     const [selectedMenu, setSelectedMenu] = useState<string | null>(null);
     const [isActiveExpProfissional, setIsActiveExpProfissional] = useState(false);
     const [isActiveHome, setIsActiveHome] = useState(true);
-
-    // const handleClick = (nome: string) => {
-    //     setSelectedMenu(nome)
-
-    //     switch (nome) {
-    //         case 'Home':
-    //             setIsActiveHome(true);
-    //             setIsActiveExpProfissional(false);
-    //             setIsActiveProjeto(false);
-    //             setIsActiveEducacao(false);
-    //             setIsActiveBlog(false)
-    //             break;
-    //         case 'Experiencia Profissional':
-    //             setIsActiveHome(false);
-    //             setIsActiveExpProfissional(true);
-    //             setIsActiveProjeto(false);
-    //             setIsActiveEducacao(false);
-    //             setIsActiveBlog(false);
-    //             break;
-    //         case 'Projetos':
-    //             setIsActiveHome(false);
-    //             setIsActiveExpProfissional(false);
-    //             setIsActiveProjeto(true);
-    //             setIsActiveEducacao(false);
-    //             setIsActiveBlog(false);
-    //             break;
-    //         case 'Educacao':
-    //             setIsActiveHome(false);
-    //             setIsActiveExpProfissional(false);
-    //             setIsActiveProjeto(false);
-    //             setIsActiveEducacao(true);
-    //             setIsActiveBlog(false);
-    //             break;
-    //         case 'Blog':
-    //             setIsActiveHome(false);
-    //             setIsActiveExpProfissional(false);
-    //             setIsActiveProjeto(false);
-    //             setIsActiveEducacao(false);
-    //             setIsActiveBlog(true);
-    //             break;
-    //         default:
-    //             setIsActiveHome(true);
-    //             setIsActiveExpProfissional(false);
-    //             setIsActiveProjeto(false);
-    //             setIsActiveEducacao(false);
-    //             setIsActiveBlog(false);
-    //             break;
-    //     }
-
-    // }
 
     const handleMenuClick = (event: React.MouseEvent<HTMLDivElement>) => {
         setAnchorEl(event.currentTarget);
@@ -139,14 +95,14 @@ const Header = () => {
                                     link={item.link}
                                     abrirEmNovaAba={item.abrirEmNovaAba} />
                             ))}
-                            <ListItemButton onClick={(e: React.MouseEvent<HTMLDivElement>) => handleMenuClick(e)}>
+                            {/* <ListItemButton onClick={(e: React.MouseEvent<HTMLDivElement>) => handleMenuClick(e)}>
                                 <ListItemIcon>
                                     <Person sx={{ color: "#fff" }} />
                                 </ListItemIcon>
                                 <ListItemText primary="Perfil" />
-                            </ListItemButton>
+                            </ListItemButton> */}
                         </List>
-                        <Menu
+                        {/* <Menu
                             anchorEl={anchorEl}
                             open={Boolean(anchorEl)}
                             onClose={handleMenuClose}
@@ -154,9 +110,7 @@ const Header = () => {
                             <MenuItem onClick={handleMenuClose}>Informações</MenuItem>
                             <MenuItem onClick={handleMenuClose}>Dash</MenuItem>
                             <MenuItem onClick={handleMenuClose}>Sair</MenuItem>
-                        </Menu>
-
-
+                        </Menu> */}
                     </Box>
                 </Box>
             </Toolbar>
