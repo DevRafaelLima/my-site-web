@@ -52,7 +52,8 @@ const Login = () => {
     }
     return (
         <Box height={100} sx={{ height: '100vh' }} display="flex" justifyContent="center" alignItems="center">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            login
+            {/* <form onSubmit={handleSubmit(onSubmit)}>
                 <Grid container spacing={6} maxWidth={500}>
                     <Grid item xs={12}>
                         <Controller
@@ -111,7 +112,7 @@ const Login = () => {
                         <Typography m="5px" color="red">Identificador ou senha estão incorretos. </Typography>
                     )}
                 </Grid>
-            </form>
+            </form> */}
         </Box>
     )
 }
