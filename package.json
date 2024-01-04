@@ -1,5 +1,5 @@
 {
-  "name": "my-site-web",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@brazilian-utils/brazilian-utils": "^1.0.0-rc.12",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@hookform/resolvers": "^3.3.2",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.16",
+    "@mui/x-data-grid": "^6.18.0",
+    "axios": "^1.6.1",
+    "jwt-simple": "^0.5.6",
+    "next": "14.0.4",
+    "normalize.css": "^8.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-hook-form": "^7.47.0",
+    "react-input-mask": "3.0.0-alpha.2",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.9.0",
+    "yup": "^1.3.2"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/react-dom": "^18",
+    "@types/react-input-mask": "^3.0.5",
+    "@types/react-slick": "^0.23.13",
+    "@types/slick-carousel": "^1.6.40",
+    "typescript": "^5"
   }
 }
